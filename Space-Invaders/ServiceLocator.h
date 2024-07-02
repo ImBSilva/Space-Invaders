@@ -3,6 +3,7 @@
 #include "GraphicService.h"
 #include "EventService.h"
 #include "PlayerService.h"
+#include "TimeService.h"
 
 
 // ServiceLocator Class Summary: This class manages access to various services in the application.
@@ -18,6 +19,7 @@ private:
     GraphicService* graphic_service;
 	EventService* event_service;
 	PlayerService* player_service;
+	TimeService* time_service;
 
     // Private Constructor and Destructor:
     
@@ -42,8 +44,8 @@ public:
     // Methods to Get Specific Services: 
     GraphicService* getGraphicService(); // Retrieve the GraphicService instance
     EventService* getEventService(); // Retrieve the GraphicService instance
-
-	PlayerService* getPlayerService(); // Retrieve the PlayerService instance
+    PlayerService* getPlayerService(); // Retrieve the PlayerService instance
+    TimeService* getTimeService(); // Retrieve the TimeService instance
 
 
 

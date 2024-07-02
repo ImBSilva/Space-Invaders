@@ -3,9 +3,6 @@
 #include <SFML/Graphics.hpp>
 #include "header/GameService.h"
 
-
-
-
 using namespace std;
 using namespace sf;
 
@@ -59,8 +56,8 @@ public:
     //New methods
     void takeDamage() {};
 
-    //void moveLeft() { position.x -= movement_speed; };
-    //void moveRight() { position.x += movement_speed;};
+    void moveLeft() {};
+    void moveRight() {};
 
     void move(float offsetX);
 
