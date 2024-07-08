@@ -1,6 +1,6 @@
-#include "ServiceLocator.h"
-#include "EventService.h"
-#include "TimeService.h"
+#include "header/ServiceLocator.h"
+#include "header/EventService.h"
+#include "header/TimeService.h"
 
 
 // Constructor: Initializes the graphic_service pointer to null and creates services.

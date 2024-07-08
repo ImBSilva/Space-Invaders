@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="header\GameService.cpp">
+    <ClCompile Include="GameService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ServiceLocator.cpp">
@@ -41,19 +41,19 @@
     <ClInclude Include="header\GameService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ServiceLocator.h">
+    <ClInclude Include="Header\EventService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GraphicService.h">
+    <ClInclude Include="Header\GraphicService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EventService.h">
+    <ClInclude Include="Header\Player\PlayerService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerService.h">
+    <ClInclude Include="Header\ServiceLocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TimeService.h">
+    <ClInclude Include="Header\TimeService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

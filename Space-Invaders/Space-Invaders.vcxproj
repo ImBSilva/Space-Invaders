@@ -132,20 +132,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="header\GameService.cpp" />
+    <ClCompile Include="GameService.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlayerService.cpp" />
     <ClCompile Include="ServiceLocator.cpp" />
     <ClCompile Include="GraphicService.cpp" />
     <ClCompile Include="EventService.cpp" />
-    <ClCompile Include="PlayerService.cpp" />
     <ClCompile Include="TimeService.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GraphicService.h" />
-    <ClInclude Include="EventService.h" />
-    <ClInclude Include="TimeService.h" />
-    <ClInclude Include="PlayerService.h" />
-    <ClInclude Include="ServiceLocator.h" />
+    <ClInclude Include="Header\EventService.h" />
+    <ClInclude Include="Header\GraphicService.h" />
+    <ClInclude Include="Header\Player\PlayerService.h" />
+    <ClInclude Include="Header\ServiceLocator.h" />
+    <ClInclude Include="Header\TimeService.h" />
     <ClInclude Include="header\GameService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

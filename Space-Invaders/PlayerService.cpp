@@ -1,6 +1,6 @@
-#include "PlayerService.h"
-#include "ServiceLocator.h"
-#include "TimeService.h"
+#include "header/Player/PlayerService.h"
+#include "header/ServiceLocator.h"
+#include "header/TimeService.h"
 
 PlayerService::PlayerService()
 {

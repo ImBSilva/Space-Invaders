@@ -2,7 +2,7 @@
 
 #include "GraphicService.h"
 #include "EventService.h"
-#include "PlayerService.h"
+#include "player/PlayerService.h"
 #include "TimeService.h"
 
 

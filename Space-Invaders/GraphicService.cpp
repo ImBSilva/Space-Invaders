@@ -1,6 +1,6 @@
 #pragma once
 
-#include "GraphicService.h"
+#include "header/GraphicService.h"
 
 // Constructor: Initializes game window and video mode pointers to null.
 GraphicService::GraphicService() {
