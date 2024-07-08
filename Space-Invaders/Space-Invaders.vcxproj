@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameService.cpp" />
+    <ClCompile Include="PlayerModel.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PlayerService.cpp" />
     <ClCompile Include="ServiceLocator.cpp" />
@@ -143,7 +144,8 @@
   <ItemGroup>
     <ClInclude Include="Header\EventService.h" />
     <ClInclude Include="Header\GraphicService.h" />
-    <ClInclude Include="Header\Player\PlayerService.h" />
+    <ClInclude Include="Header\PlayerService.h" />
+    <ClInclude Include="Header\Player\PlayerModel.h" />
     <ClInclude Include="Header\ServiceLocator.h" />
     <ClInclude Include="Header\TimeService.h" />
     <ClInclude Include="header\GameService.h" />
