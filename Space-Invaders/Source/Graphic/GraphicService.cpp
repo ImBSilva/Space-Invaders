@@ -1,6 +1,6 @@
 #pragma once
 
-#include "GraphicService.h"
+#include "../../Header/Graphic/GraphicService.h"
 
 // Constructor: Initializes game window and video mode pointers to null.
 GraphicService::GraphicService() {
@@ -16,6 +16,7 @@ GraphicService::~GraphicService() {
 // Initializes the graphic service by creating a new game window.
 void GraphicService::initialize() {
 	game_window = createGameWindow(); // Assigns a new game window to the game_window pointer
+	game_window->setFramerateLimit(frame_rate); // Sets the framerate limit
 }
 
 // Creates a new SFML RenderWindow object with specified video mode and title.

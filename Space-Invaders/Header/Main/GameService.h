@@ -1,8 +1,10 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../ServiceLocator.h"
-#include "../GraphicService.h"
+
+
+class ServiceLocator;
+class GraphicService;
 
 
 class GameService

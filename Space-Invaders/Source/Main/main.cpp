@@ -1,79 +1,34 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "header/GameService.h"
+#include "../../header/main/GameService.h"
+#include "../../header/player/PlayerService.h"
 
 
 
 using namespace std;
 using namespace sf;
 
-/*
-class Player {
-
-private:
-    // Private Properties
-    int health = 3;
-    sf::Vector2f position = sf::Vector2f(600.0f, 900.0f);
-    float movement_speed = 0.3;
-    int player_score = 0;
-
-public:
-
-    // Public Properties
-    sf::Texture player_texture;
-    sf::Sprite player_sprite;
-
-    //Public Getter & Setter methods
-    int getScore() {
-        return player_score;
-    };
-
-    void setScore(int newScore) {
-        player_score = newScore;
-    };
-
-    Vector2f getPosition() {
-		return position;
-    };
-
-    float getMoveSpeed() {
-        return movement_speed;
-    };
-
-    //New methods
-    void takeDamage() {};
-
-    //void moveLeft() { position.x -= movement_speed; };
-	//void moveRight() { position.x += movement_speed;};
-
-    void move(float offsetX) {
-		position.x += offsetX;
-    };
-
-
-
-
-    void shootBullets() {};
-
-};
-*/
-
 
 int main() {
     GameService* game_service = new GameService();
+	PlayerService* player_controller = new PlayerService();
 
     game_service->ignite();
+
+    // Define the video mode (dimensions)
 
     while (game_service->isRunning())
     {
         game_service->update();
 		game_service->render();
+
+
     }
 
-   /* Player player;
 
 
-    // Define the video mode (dimensions)
+
+    /*
     sf::VideoMode videoMode = sf::VideoMode(1920, 1080);
 
     // Create a window object with specific dimensions and a title
