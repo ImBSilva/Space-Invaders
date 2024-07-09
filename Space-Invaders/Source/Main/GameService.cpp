@@ -1,6 +1,8 @@
-#include "../header/GameService.h"
-#include "../GraphicService.h"
-#include "../ServiceLocator.h"
+#include "../../header/main/GameService.h"
+#include "../../header/graphic/GraphicService.h"
+#include "../../Header/Global/ServiceLocator.h"
+#include "../../Header/Event/EventService.h"
+
 
 
 // Constructor: Initializes pointers to null.
