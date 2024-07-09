@@ -1,84 +1,27 @@
 #include "header/PlayerService.h"
-#include "header/ServiceLocator.h"
-#include "header/TimeService.h"
+#include "header/Player/PlayerController.h"
 
 PlayerService::PlayerService()
 {
-	game_window = nullptr;
+	player_controller = new PlayerController();
 }
 
-PlayerService::~PlayerService() = default;
-
-//init
-void PlayerService::initialize() 
+PlayerService::~PlayerService()
 {
-	game_window = ServiceLocator::getInstance()->getGraphicService()->getGameWindow();
-	initializePlayerSprite();
+	delete (player_controller);
 }
 
-//take our players input in update, then set the position.
-//order is important here
+void PlayerService::initialize()
+{
+	player_controller->initialize();
+}
 
 void PlayerService::update()
 {
-	processPlayerInput();
-	player_sprite.setPosition(getPlayerPosition());
+	player_controller->update();
 }
-
 
 void PlayerService::render()
 {
-	game_window->draw(player_sprite);
+	player_controller->render();
 }
-
-void PlayerService::processPlayerInput()
-{
-	EventService* event_service = ServiceLocator::getInstance()->getEventService(); //get the event service object created in service locator
-
-	if (event_service->isKeyboardEvent()) //check if a key has been pressed
-	{
-		if (event_service->pressedLeftKey())
-		{
-			//move(-1.0f * getMoveSpeed());
-			moveLeft();
-		}
-
-		if (event_service->pressedRightKey())
-		{
-			//move(1.0f * getMoveSpeed());
-			moveLeft();
-		}
-	}
-
-}
-
-//new movement methods
-
-void PlayerService::moveLeft()
-{
-	position.x -= movement_speed * ServiceLocator::getInstance()->getTimeService()->getDeltaTime();
-}
-
-void PlayerService::moveRight()
-{
-	position.x += movement_speed * ServiceLocator::getInstance()->getTimeService()->getDeltaTime();
-}
-
-void PlayerService::initializePlayerSprite() 
-{
-	if(player_texture.loadFromFile("assets/textures/player_ship.png")); 
-	{
-		player_sprite.setTexture(player_texture);
-	}
-}
-
-
-void PlayerService::move(float offsetX) {
-	position.x += offsetX * ServiceLocator::getInstance()->getTimeService()->getDeltaTime();
-};
-
-
-//helper functions
-sf::Vector2f PlayerService::getPlayerPosition() { return position; }
-float PlayerService::getMoveSpeed() { return movement_speed; }
-
