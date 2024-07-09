@@ -1,7 +1,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "header/GameService.h"
-#include "header/PlayerService.h"
+#include "../../header/main/GameService.h"
+#include "../../header/player/PlayerService.h"
 
 
 
@@ -15,20 +15,20 @@ int main() {
 
     game_service->ignite();
 
+    // Define the video mode (dimensions)
+
     while (game_service->isRunning())
     {
         game_service->update();
 		game_service->render();
 
-        player_controller->initialize();
+
     }
 
 
 
-   /*Player player;
 
-
-    // Define the video mode (dimensions)
+    /*
     sf::VideoMode videoMode = sf::VideoMode(1920, 1080);
 
     // Create a window object with specific dimensions and a title

@@ -1,7 +1,9 @@
 #include "../../Header/Player/PlayerController.h"
-#include "../../Header/EventService.h"
-#include "../../Header/ServiceLocator.h"
+#include "../../Header/Player/PlayerModel.h"
 #include "../../Header/Player/PlayerView.h"
+#include "../../Header/event/EventService.h"
+#include "../../Header/global/ServiceLocator.h"
+#include "../../Header/time/TimeService.h"
 #include<algorithm>
 
 

@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "PlayerController.h"
+
+class PlayerController;
 
 enum class PlayerState //Our Enum
 {

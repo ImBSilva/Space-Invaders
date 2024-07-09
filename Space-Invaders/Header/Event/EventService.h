@@ -12,8 +12,6 @@ private:
 	bool gameWindowWasClosed(); //for the condition we already had - the title bar cross.
 	bool hasQuitGame(); //for our new 'ESC' condition
 
-
-
 public:
 	EventService();
 	~EventService();

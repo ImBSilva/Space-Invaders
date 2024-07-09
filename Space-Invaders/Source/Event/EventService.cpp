@@ -1,6 +1,7 @@
-#include "EventService.h"
-#include "header/GameService.h"
-#include "GraphicService.h"
+#include "../../header/event/EventService.h"
+#include "../../header/Main/GameService.h"
+#include "../../header/graphic/GraphicService.h"
+#include "../../Header/global/ServiceLocator.h"
 
 EventService::EventService() { game_window = nullptr; }
 

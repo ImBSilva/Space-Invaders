@@ -6,10 +6,10 @@ class GraphicService
 {
 private:
 
-	const std::string game_window_title = "Outscal Presents - Alien Invader";
+	const std::string game_window_title = "Outscal Presents - Alien Invader by Bruno Silva";
 
-	const int game_window_width = 800;
-	const int game_window_height = 600;
+	const int game_window_width = 1920;
+	const int game_window_height = 1080;
 	const int frame_rate = 60; // Frames per second
 
 
