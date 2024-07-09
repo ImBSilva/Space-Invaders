@@ -7,6 +7,8 @@
 
 using namespace std;
 using namespace sf;
+using namespace Main;
+using namespace Player;
 
 
 int main() {

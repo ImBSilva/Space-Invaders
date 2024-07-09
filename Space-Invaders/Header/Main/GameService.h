@@ -1,29 +1,41 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+<<<<<<< HEAD:Space-Invaders/Header/Main/GameService.h
 
 
 class ServiceLocator;
 class GraphicService;
+=======
+<<<<<<< Updated upstream:Space-Invaders/Header/GameService.h
+#include "../ServiceLocator.h"
+#include "../GraphicService.h"
+=======
+>>>>>>> parent of ea33e57 (Revert "inplement namespaces"):Space-Invaders/Header/GameService.h
 
+namespace Main {
 
-class GameService
-{
-private:
+	class ServiceLocator;
+	class GraphicService;
+>>>>>>> Stashed changes:Space-Invaders/Header/Main/GameService.h
 
-	ServiceLocator* service_locator;
-	sf::RenderWindow* game_window;
+	class GameService {
+	private:
 
-	void initialize();		// Handles game initialization.
-	void initializeVariables();// Handles game initialization.
-	void destroy();			// Handles cleanup tasks.
+		ServiceLocator* service_locator;
+		sf::RenderWindow* game_window;
 
-public:
-	GameService();			// Constructor for initializing the GameService object.
-	~GameService();	    // Destructor for cleaning up resources upon object deletion.
+		void initialize();		// Handles game initialization.
+		void initializeVariables();// Handles game initialization.
+		void destroy();			// Handles cleanup tasks.
 
-	void ignite();			// Initiates the game.
-	void update();			// Updates the game logic and game state.
-	void render();			// Renders each frame of the game.
-	bool isRunning();		// Checks if the game is currently running.
-};
+	public:
+		GameService();			// Constructor for initializing the GameService object.
+		~GameService();	    // Destructor for cleaning up resources upon object deletion.
+
+		void ignite();			// Initiates the game.
+		void update();			// Updates the game logic and game state.
+		void render();			// Renders each frame of the game.
+		bool isRunning();		// Checks if the game is currently running.
+	};
+}
